@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: black;
+}
+
+header {
+  text-align: center;
+  padding-top: 100px;
+}
+
+header h1 {
+  color: white;
+}
+h2 {
+  color: white;
+}
+span {
+  color: white;
+}
+.selection {
+  font: bold 16px sans-serif;
+}
+
+/* The footer is fixed to the bottom of the page */
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+  header {
+    padding-top: 40px;
+  }
+}
+
+.footer-distributed {
+  background-color: #000;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+  width: 10%;
+}
+
+.footer-distributed .footer-left img {
+  width: 30%;
+}
+.footer-distributed .footer-center {
+  width: 80%;
+}
+.details {
+  color: gray;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+}
+#closeCurrencyModal,
+#closeLangugeModal {
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#closeCurrencyModal:hover,
+#closeLangugeModal:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.selectBtn {
+  background-color: #383838;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-top: 5px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font: bold 16px sans-serif;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: transparent;
+  padding: 5px;
+  width: 200px;
+  margin-top: 10px;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+}
